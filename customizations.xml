@@ -1,0 +1,3753 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25071.172" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25071.00172">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Asset" OriginalName="Asset">crb72_Asset</Name>
+      <EntityInfo>
+        <entity Name="crb72_Asset">
+          <LocalizedNames>
+            <LocalizedName description="Asset" languagecode="1033" />
+          </LocalizedNames>
+          <LocalizedCollectionNames>
+            <LocalizedCollectionName description="Assets" languagecode="1033" />
+          </LocalizedCollectionNames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+          <attributes>
+            <attribute PhysicalName="crb72_AssetId">
+              <Type>primarykey</Type>
+              <Name>crb72_assetid</Name>
+              <LogicalName>crb72_assetid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <displaynames>
+                <displayname description="Asset" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for entity instances" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_AssetName">
+              <Type>nvarchar</Type>
+              <Name>crb72_assetname</Name>
+              <LogicalName>crb72_assetname</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>1</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>850</MaxLength>
+              <Length>1700</Length>
+              <displaynames>
+                <displayname description="Asset Name" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_AssetType">
+              <Type>picklist</Type>
+              <Name>crb72_assettype</Name>
+              <LogicalName>crb72_assettype</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>-1</AppDefaultValue>
+              <optionset Name="crb72_asset_crb72_assettype">
+                <OptionSetType>picklist</OptionSetType>
+                <IntroducedVersion>1.0.0.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <ExternalTypeName></ExternalTypeName>
+                <displaynames>
+                  <displayname description="Asset Type" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="0" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Equipment" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="1" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Furniture" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="2" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Technology" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="Asset Type" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Booker">
+              <Type>nvarchar</Type>
+              <Name>crb72_booker</Name>
+              <LogicalName>crb72_booker</LogicalName>
+              <RequiredLevel>recommended</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>email</Format>
+              <MaxLength>100</MaxLength>
+              <Length>200</Length>
+              <displaynames>
+                <displayname description="Booker" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Last_Booker">
+              <Type>nvarchar</Type>
+              <Name>crb72_last_booker</Name>
+              <LogicalName>crb72_last_booker</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>email</Format>
+              <MaxLength>100</MaxLength>
+              <Length>200</Length>
+              <displaynames>
+                <displayname description="Last Booker" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Location">
+              <Type>lookup</Type>
+              <Name>crb72_location</Name>
+              <LogicalName>crb72_location</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Location" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Photo">
+              <Type>image</Type>
+              <Name>crb72_photo</Name>
+              <LogicalName>crb72_photo</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>DenormalizedChild|PrimaryImage|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>0</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>jpeg</Format>
+              <MaxLength>9437328</MaxLength>
+              <MaxValue>10240</MaxValue>
+              <displaynames>
+                <displayname description="Photo" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_PurchaseDate">
+              <Type>datetime</Type>
+              <Name>crb72_purchasedate</Name>
+              <LogicalName>crb72_purchasedate</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>date</Format>
+              <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
+              <Behavior>3</Behavior>
+              <displaynames>
+                <displayname description="Purchase Date" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Status">
+              <Type>picklist</Type>
+              <Name>crb72_status</Name>
+              <LogicalName>crb72_status</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>-1</AppDefaultValue>
+              <optionset Name="crb72_asset_crb72_status">
+                <OptionSetType>picklist</OptionSetType>
+                <IntroducedVersion>1.0.0.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <ExternalTypeName></ExternalTypeName>
+                <displaynames>
+                  <displayname description="Status" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="0" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Available" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="1" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="In Use" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="2" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Maintenance" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="3" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Retired" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Value">
+              <Type>money</Type>
+              <Name>crb72_value</Name>
+              <LogicalName>crb72_value</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <MinValue>-922337203685477</MinValue>
+              <MaxValue>922337203685477</MaxValue>
+              <Accuracy>2</Accuracy>
+              <AccuracySource>2</AccuracySource>
+              <displaynames>
+                <displayname description="Value" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_value_Base">
+              <Type>money</Type>
+              <Name>crb72_value_base</Name>
+              <LogicalName>crb72_value_base</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <MinValue>-922337203685477</MinValue>
+              <MaxValue>922337203685477</MaxValue>
+              <Accuracy>2</Accuracy>
+              <AccuracySource>2</AccuracySource>
+              <CalculationOf>crb72_Value</CalculationOf>
+              <displaynames>
+                <displayname description="Value (Base)" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Value of the Value in base currency." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <Name>createdby</Name>
+              <LogicalName>createdby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Created By" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the user who created the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <Name>createdon</Name>
+              <LogicalName>createdon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time when the record was created." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedOnBehalfBy">
+              <Type>lookup</Type>
+              <Name>createdonbehalfby</Name>
+              <LogicalName>createdonbehalfby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Created By (Delegate)" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the delegate user who created the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ExchangeRate">
+              <Type>decimal</Type>
+              <Name>exchangerate</Name>
+              <LogicalName>exchangerate</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <MinValue>1E-10</MinValue>
+              <MaxValue>100000000000</MaxValue>
+              <Accuracy>12</Accuracy>
+              <displaynames>
+                <displayname description="Exchange Rate" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Exchange rate for the currency associated with the entity with respect to the base currency." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ImportSequenceNumber">
+              <Type>int</Type>
+              <Name>importsequencenumber</Name>
+              <LogicalName>importsequencenumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-2147483648</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Import Sequence Number" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Sequence number of the import that created this record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <Name>modifiedby</Name>
+              <LogicalName>modifiedby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Modified By" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <Name>modifiedon</Name>
+              <LogicalName>modifiedon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Modified On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time when the record was modified." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedOnBehalfBy">
+              <Type>lookup</Type>
+              <Name>modifiedonbehalfby</Name>
+              <LogicalName>modifiedonbehalfby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Modified By (Delegate)" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the delegate user who modified the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OverriddenCreatedOn">
+              <Type>datetime</Type>
+              <Name>overriddencreatedon</Name>
+              <LogicalName>overriddencreatedon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>date</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Record Created On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time that the record was migrated." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <Name>ownerid</Name>
+              <LogicalName>ownerid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes>
+                <LookupType id="00000000-0000-0000-0000-000000000000">8</LookupType>
+                <LookupType id="00000000-0000-0000-0000-000000000000">9</LookupType>
+              </LookupTypes>
+              <displaynames>
+                <displayname description="Owner" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Owner Id" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <Name>owningbusinessunit</Name>
+              <LogicalName>owningbusinessunit</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Owning Business Unit" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningTeam">
+              <Type>lookup</Type>
+              <Name>owningteam</Name>
+              <LogicalName>owningteam</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Owning Team" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <Name>owninguser</Name>
+              <LogicalName>owninguser</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Owning User" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="statecode">
+              <Type>state</Type>
+              <Name>statecode</Name>
+              <LogicalName>statecode</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <optionset Name="crb72_asset_statecode">
+                <OptionSetType>state</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Status" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="Status of the Asset" languagecode="1033" />
+                </Descriptions>
+                <states>
+                  <state value="0" defaultstatus="1" invariantname="Active">
+                    <labels>
+                      <label description="Active" languagecode="1033" />
+                    </labels>
+                  </state>
+                  <state value="1" defaultstatus="2" invariantname="Inactive">
+                    <labels>
+                      <label description="Inactive" languagecode="1033" />
+                    </labels>
+                  </state>
+                </states>
+              </optionset>
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Status of the Asset" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="statuscode">
+              <Type>status</Type>
+              <Name>statuscode</Name>
+              <LogicalName>statuscode</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <optionset Name="crb72_asset_statuscode">
+                <OptionSetType>status</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Status Reason" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="Reason for the status of the Asset" languagecode="1033" />
+                </Descriptions>
+                <statuses>
+                  <status value="1" state="0">
+                    <labels>
+                      <label description="Active" languagecode="1033" />
+                    </labels>
+                  </status>
+                  <status value="2" state="1">
+                    <labels>
+                      <label description="Inactive" languagecode="1033" />
+                    </labels>
+                  </status>
+                </statuses>
+              </optionset>
+              <displaynames>
+                <displayname description="Status Reason" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Reason for the status of the Asset" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="TimeZoneRuleVersionNumber">
+              <Type>int</Type>
+              <Name>timezoneruleversionnumber</Name>
+              <LogicalName>timezoneruleversionnumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-1</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Time Zone Rule Version Number" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="For internal use only." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="TransactionCurrencyId">
+              <Type>lookup</Type>
+              <Name>transactioncurrencyid</Name>
+              <LogicalName>transactioncurrencyid</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Currency" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the currency associated with the entity." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="UTCConversionTimeZoneCode">
+              <Type>int</Type>
+              <Name>utcconversiontimezonecode</Name>
+              <LogicalName>utcconversiontimezonecode</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-1</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="UTC Conversion Time Zone Code" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+          <EntitySetName>crb72_assets</EntitySetName>
+          <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
+          <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+          <IsRequiredOffline>0</IsRequiredOffline>
+          <IsInteractionCentricEnabled>0</IsInteractionCentricEnabled>
+          <IsCollaboration>0</IsCollaboration>
+          <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
+          <IsConnectionsEnabled>0</IsConnectionsEnabled>
+          <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+          <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
+          <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
+          <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+          <IsSLAEnabled>0</IsSLAEnabled>
+          <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
+          <IsBPFEntity>0</IsBPFEntity>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
+          <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>
+          <IsActivity>0</IsActivity>
+          <ActivityTypeMask></ActivityTypeMask>
+          <IsActivityParty>0</IsActivityParty>
+          <IsReplicated>0</IsReplicated>
+          <IsReplicationUserFiltered>0</IsReplicationUserFiltered>
+          <IsMailMergeEnabled>1</IsMailMergeEnabled>
+          <IsVisibleInMobile>0</IsVisibleInMobile>
+          <IsVisibleInMobileClient>0</IsVisibleInMobileClient>
+          <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+          <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+          <DaysSinceRecordLastModified>0</DaysSinceRecordLastModified>
+          <MobileOfflineFilters></MobileOfflineFilters>
+          <IsMapiGridEnabled>1</IsMapiGridEnabled>
+          <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
+          <IsQuickCreateEnabled>0</IsQuickCreateEnabled>
+          <SyncToExternalSearchIndex>0</SyncToExternalSearchIndex>
+          <IntroducedVersion>1.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <IsMappable>1</IsMappable>
+          <CanModifyAuditSettings>1</CanModifyAuditSettings>
+          <CanModifyMobileVisibility>1</CanModifyMobileVisibility>
+          <CanModifyMobileClientVisibility>1</CanModifyMobileClientVisibility>
+          <CanModifyMobileClientReadOnly>1</CanModifyMobileClientReadOnly>
+          <CanModifyMobileClientOffline>1</CanModifyMobileClientOffline>
+          <CanModifyConnectionSettings>1</CanModifyConnectionSettings>
+          <CanModifyDuplicateDetectionSettings>1</CanModifyDuplicateDetectionSettings>
+          <CanModifyMailMergeSettings>1</CanModifyMailMergeSettings>
+          <CanModifyQueueSettings>1</CanModifyQueueSettings>
+          <CanCreateAttributes>1</CanCreateAttributes>
+          <CanCreateForms>1</CanCreateForms>
+          <CanCreateCharts>1</CanCreateCharts>
+          <CanCreateViews>1</CanCreateViews>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <EnforceStateTransitions>0</EnforceStateTransitions>
+          <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
+          <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
+          <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
+          <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
+          <IsMSTeamsIntegrationEnabled>0</IsMSTeamsIntegrationEnabled>
+          <IsSolutionAware>0</IsSolutionAware>
+        </entity>
+      </EntityInfo>
+      <FormXml>
+        <forms type="card">
+          <systemform>
+            <formid>{71d966a9-f091-423a-a3df-2d0a5e786bdd}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab name="general" verticallayout="true" id="{b2ebf5bd-cac3-42bf-9a07-3aadaa3879a9}" IsUserDefined="0">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="25%">
+                      <sections>
+                        <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{3d03e5a2-41f6-4973-a96e-9764c71314ab}">
+                          <labels>
+                            <label description="ColorStrip" languagecode="1033" />
+                          </labels>
+                        </section>
+                      </sections>
+                    </column>
+                    <column width="75%">
+                      <sections>
+                        <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{9ac2c448-e006-4009-a0ae-ee0f823e4a2b}" IsUserDefined="0">
+                          <labels>
+                            <label description="Header" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{fd6c172d-500a-466c-9f68-7077495d5cf5}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Status Reason" languagecode="1033" />
+                                </labels>
+                                <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                              </cell>
+                              <cell id="{9a14e08d-9a2a-4afe-bad4-cf8f42ac924c}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                              <cell id="{e9ebc92a-d9b8-41d7-ab61-5e03f622bb6e}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{7fc4c3de-dd11-4cb6-82ee-0990528f8ccf}" IsUserDefined="0">
+                          <labels>
+                            <label description="Details" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{38bb40fe-c588-4e1c-abdb-e1be2afbaaeb}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Asset Name" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_assetname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crb72_assetname" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{f425dad4-7713-467e-b33c-4cc42d845c64}" IsUserDefined="0">
+                          <labels>
+                            <label description="Footer" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{b3fa1aa0-cfef-41d0-83d0-cc2fdc2442b6}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                              </cell>
+                              <cell id="{c534c228-d8ce-464d-abf2-3c1113479bd5}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Created On" languagecode="1033" />
+                                </labels>
+                                <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
+                              </cell>
+                              <cell id="{1c16b340-d38e-41a3-95e6-3589d92121cd}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                              <cell id="{b7f20e15-a541-4be4-b26c-176d4be3b5e5}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Information" languagecode="1033" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="A card form for this entity." languagecode="1033" />
+            </Descriptions>
+          </systemform>
+        </forms>
+        <forms type="main">
+          <systemform>
+            <formid>{60f8e97c-90d2-40c1-b1ef-56ebe1600eef}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab verticallayout="true" id="{2b3c42a8-a65c-48e1-ba50-1fc1437f1259}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{a05b64ad-8c03-4df0-be26-56f744fa5c59}">
+                          <labels>
+                            <label description="General" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{80521621-7f21-4adf-b5f6-e918fe6c1706}">
+                                <labels>
+                                  <label description="Asset Name" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_assetname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crb72_assetname" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{f1263e88-1ed7-43a1-8941-0f8587b0ce6a}">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{ead0a02c-5f70-4c60-8c33-be1bbca90deb}">
+                                <labels>
+                                  <label description="Asset Type" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_assettype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crb72_assettype" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{a7c7c9e7-7ece-4918-96e0-90c982521243}">
+                                <labels>
+                                  <label description="Location" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_location" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="crb72_location" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{3f7b8da4-f5c2-484a-ac33-358c8da37739}">
+                                <labels>
+                                  <label description="Purchase Date" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_purchasedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crb72_purchasedate" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{b6a42a93-ef67-4da3-b95e-9cf6f9e00a2d}">
+                                <labels>
+                                  <label description="Status" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_status" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crb72_status" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{54f38b0b-467a-4079-a908-9a461f538f87}">
+                                <labels>
+                                  <label description="Value" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_value" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="crb72_value" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Information" languagecode="1033" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="A form for this entity." languagecode="1033" />
+            </Descriptions>
+          </systemform>
+        </forms>
+        <forms type="quick">
+          <systemform>
+            <formid>{d90224b7-95b5-462e-afdf-92682a5ebd8c}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab verticallayout="true" id="{64b236bb-5be1-4ae7-83f5-632ce622cc0f}" IsUserDefined="1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{577c0254-8477-490b-b28a-eaf68aed5e61}">
+                          <labels>
+                            <label description="GENERAL" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{920c98ab-0839-4b9d-91e9-d2289d6f8336}">
+                                <labels>
+                                  <label description="Asset Name" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_assetname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crb72_assetname" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{19914b4b-e2be-4bc5-b3bb-98652c207f2c}">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Information" languagecode="1033" />
+            </LocalizedNames>
+          </systemform>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{6d4f3e7d-c4c6-445c-a4da-025758c1728e}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_assetname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_assetid">
+                  <cell name="crb72_assetname" width="300" />
+                  <cell name="crb72_assettype" width="150" />
+                  <cell name="crb72_location" width="150" />
+                  <cell name="crb72_purchasedate" width="150" />
+                  <cell name="crb72_status" width="150" />
+                  <cell name="crb72_value" width="150" />
+                  <cell name="crb72_photo" width="100" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>0</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <attribute name="crb72_assetname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_assetname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <attribute name="crb72_assettype" />
+                  <attribute name="crb72_location" />
+                  <attribute name="crb72_purchasedate" />
+                  <attribute name="crb72_status" />
+                  <attribute name="crb72_value" />
+                  <attribute name="crb72_photo" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Active Assets" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{16303ca6-9c63-47ad-ba86-92bb60230e3a}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_assetname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_assetid">
+                  <cell name="crb72_assetname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>1</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <attribute name="crb72_assetname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_assetname" descending="false" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Asset Advanced Find View" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{629510e7-2eb9-460e-ab57-666d9f30a7d0}</savedqueryid>
+            <layoutxml>
+              <grid name="crb72_assets" jump="crb72_assetname" select="1" icon="1" preview="1">
+                <row name="crb72_asset" id="crb72_assetid">
+                  <cell name="crb72_assetname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>2</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <attribute name="crb72_assetname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_assetname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Asset Associated View" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{c98bb343-c41b-46f1-a9f3-f3e8b63bc2d5}</savedqueryid>
+            <layoutxml>
+              <grid name="crb72_assets" jump="crb72_assetname" select="1" icon="1" preview="0">
+                <row name="crb72_asset" id="crb72_assetid">
+                  <cell name="crb72_assetname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>64</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <attribute name="crb72_assetname" />
+                  <attribute name="createdon" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Asset Lookup View" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>0</isdefault>
+            <savedqueryid>{5c56a6c2-f35c-4e6b-89aa-cb43a269d401}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_assetname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_assetid">
+                  <cell name="crb72_assetname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>0</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <attribute name="crb72_assetname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_assetname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Inactive Assets" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{78ffb7c1-6d6b-f011-bec3-6045bd409f66}</savedqueryid>
+            <querytype>8192</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical" output-format="xml-platform">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                    <condition attribute="ownerid" operator="eq-userid" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="My Assets" languagecode="1033" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="Active Assets owned by me" languagecode="1033" />
+            </Descriptions>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>1</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{243826c8-1097-4dd1-8233-9b4ac10a4fde}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_assetname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_assetid">
+                  <cell name="crb72_assetname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>4</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_asset">
+                  <attribute name="crb72_assetid" />
+                  <attribute name="crb72_assetname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_assetname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="crb72_assetname" operator="like" value="{0}" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Quick Find Active Assets" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+    <Entity>
+      <Name LocalizedName="Location" OriginalName="Location">crb72_Location</Name>
+      <EntityInfo>
+        <entity Name="crb72_Location">
+          <LocalizedNames>
+            <LocalizedName description="Location" languagecode="1033" />
+          </LocalizedNames>
+          <LocalizedCollectionNames>
+            <LocalizedCollectionName description="Locations" languagecode="1033" />
+          </LocalizedCollectionNames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+          <attributes>
+            <attribute PhysicalName="crb72_BuildingName">
+              <Type>nvarchar</Type>
+              <Name>crb72_buildingname</Name>
+              <LogicalName>crb72_buildingname</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>1</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>850</MaxLength>
+              <Length>1700</Length>
+              <displaynames>
+                <displayname description="Building Name" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_Capacity">
+              <Type>int</Type>
+              <Name>crb72_capacity</Name>
+              <LogicalName>crb72_capacity</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>none</Format>
+              <MinValue>-2147483648</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Capacity" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_LocationId">
+              <Type>primarykey</Type>
+              <Name>crb72_locationid</Name>
+              <LogicalName>crb72_locationid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <displaynames>
+                <displayname description="Location" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for entity instances" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_RoomNumber">
+              <Type>nvarchar</Type>
+              <Name>crb72_roomnumber</Name>
+              <LogicalName>crb72_roomnumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>100</MaxLength>
+              <Length>200</Length>
+              <displaynames>
+                <displayname description="Room Number" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="crb72_RoomType">
+              <Type>picklist</Type>
+              <Name>crb72_roomtype</Name>
+              <LogicalName>crb72_roomtype</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>-1</AppDefaultValue>
+              <optionset Name="crb72_location_crb72_roomtype">
+                <OptionSetType>picklist</OptionSetType>
+                <IntroducedVersion>1.0.0.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <ExternalTypeName></ExternalTypeName>
+                <displaynames>
+                  <displayname description="Room Type" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="0" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Classroom" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="1" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Lab" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="2" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Office" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                  <option value="3" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Hall" languagecode="1033" />
+                    </labels>
+                    <Descriptions>
+                      <Description description="" languagecode="1033" />
+                    </Descriptions>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="Room Type" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <Name>createdby</Name>
+              <LogicalName>createdby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Created By" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the user who created the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <Name>createdon</Name>
+              <LogicalName>createdon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Created On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time when the record was created." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedOnBehalfBy">
+              <Type>lookup</Type>
+              <Name>createdonbehalfby</Name>
+              <LogicalName>createdonbehalfby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Created By (Delegate)" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the delegate user who created the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ImportSequenceNumber">
+              <Type>int</Type>
+              <Name>importsequencenumber</Name>
+              <LogicalName>importsequencenumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-2147483648</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Import Sequence Number" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Sequence number of the import that created this record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <Name>modifiedby</Name>
+              <LogicalName>modifiedby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Modified By" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <Name>modifiedon</Name>
+              <LogicalName>modifiedon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Modified On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time when the record was modified." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedOnBehalfBy">
+              <Type>lookup</Type>
+              <Name>modifiedonbehalfby</Name>
+              <LogicalName>modifiedonbehalfby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Modified By (Delegate)" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier of the delegate user who modified the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OverriddenCreatedOn">
+              <Type>datetime</Type>
+              <Name>overriddencreatedon</Name>
+              <LogicalName>overriddencreatedon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>date</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Record Created On" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Date and time that the record was migrated." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <Name>ownerid</Name>
+              <LogicalName>ownerid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes>
+                <LookupType id="00000000-0000-0000-0000-000000000000">8</LookupType>
+                <LookupType id="00000000-0000-0000-0000-000000000000">9</LookupType>
+              </LookupTypes>
+              <displaynames>
+                <displayname description="Owner" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Owner Id" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <Name>owningbusinessunit</Name>
+              <LogicalName>owningbusinessunit</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Owning Business Unit" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningTeam">
+              <Type>lookup</Type>
+              <Name>owningteam</Name>
+              <LogicalName>owningteam</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Owning Team" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <Name>owninguser</Name>
+              <LogicalName>owninguser</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Owning User" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="statecode">
+              <Type>state</Type>
+              <Name>statecode</Name>
+              <LogicalName>statecode</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <optionset Name="crb72_location_statecode">
+                <OptionSetType>state</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Status" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="Status of the Location" languagecode="1033" />
+                </Descriptions>
+                <states>
+                  <state value="0" defaultstatus="1" invariantname="Active">
+                    <labels>
+                      <label description="Active" languagecode="1033" />
+                    </labels>
+                  </state>
+                  <state value="1" defaultstatus="2" invariantname="Inactive">
+                    <labels>
+                      <label description="Inactive" languagecode="1033" />
+                    </labels>
+                  </state>
+                </states>
+              </optionset>
+              <displaynames>
+                <displayname description="Status" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Status of the Location" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="statuscode">
+              <Type>status</Type>
+              <Name>statuscode</Name>
+              <LogicalName>statuscode</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <optionset Name="crb72_location_statuscode">
+                <OptionSetType>status</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Status Reason" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="Reason for the status of the Location" languagecode="1033" />
+                </Descriptions>
+                <statuses>
+                  <status value="1" state="0">
+                    <labels>
+                      <label description="Active" languagecode="1033" />
+                    </labels>
+                  </status>
+                  <status value="2" state="1">
+                    <labels>
+                      <label description="Inactive" languagecode="1033" />
+                    </labels>
+                  </status>
+                </statuses>
+              </optionset>
+              <displaynames>
+                <displayname description="Status Reason" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Reason for the status of the Location" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="TimeZoneRuleVersionNumber">
+              <Type>int</Type>
+              <Name>timezoneruleversionnumber</Name>
+              <LogicalName>timezoneruleversionnumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-1</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Time Zone Rule Version Number" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="For internal use only." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="UTCConversionTimeZoneCode">
+              <Type>int</Type>
+              <Name>utcconversiontimezonecode</Name>
+              <LogicalName>utcconversiontimezonecode</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-1</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="UTC Conversion Time Zone Code" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+          <EntitySetName>crb72_locations</EntitySetName>
+          <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
+          <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+          <IsRequiredOffline>0</IsRequiredOffline>
+          <IsInteractionCentricEnabled>0</IsInteractionCentricEnabled>
+          <IsCollaboration>0</IsCollaboration>
+          <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
+          <IsConnectionsEnabled>0</IsConnectionsEnabled>
+          <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+          <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
+          <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
+          <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+          <IsSLAEnabled>0</IsSLAEnabled>
+          <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
+          <IsBPFEntity>0</IsBPFEntity>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
+          <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>
+          <IsActivity>0</IsActivity>
+          <ActivityTypeMask></ActivityTypeMask>
+          <IsActivityParty>0</IsActivityParty>
+          <IsReplicated>0</IsReplicated>
+          <IsReplicationUserFiltered>0</IsReplicationUserFiltered>
+          <IsMailMergeEnabled>1</IsMailMergeEnabled>
+          <IsVisibleInMobile>0</IsVisibleInMobile>
+          <IsVisibleInMobileClient>0</IsVisibleInMobileClient>
+          <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+          <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+          <DaysSinceRecordLastModified>0</DaysSinceRecordLastModified>
+          <MobileOfflineFilters></MobileOfflineFilters>
+          <IsMapiGridEnabled>1</IsMapiGridEnabled>
+          <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
+          <IsQuickCreateEnabled>0</IsQuickCreateEnabled>
+          <SyncToExternalSearchIndex>0</SyncToExternalSearchIndex>
+          <IntroducedVersion>1.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <IsMappable>1</IsMappable>
+          <CanModifyAuditSettings>1</CanModifyAuditSettings>
+          <CanModifyMobileVisibility>1</CanModifyMobileVisibility>
+          <CanModifyMobileClientVisibility>1</CanModifyMobileClientVisibility>
+          <CanModifyMobileClientReadOnly>1</CanModifyMobileClientReadOnly>
+          <CanModifyMobileClientOffline>1</CanModifyMobileClientOffline>
+          <CanModifyConnectionSettings>1</CanModifyConnectionSettings>
+          <CanModifyDuplicateDetectionSettings>1</CanModifyDuplicateDetectionSettings>
+          <CanModifyMailMergeSettings>1</CanModifyMailMergeSettings>
+          <CanModifyQueueSettings>1</CanModifyQueueSettings>
+          <CanCreateAttributes>1</CanCreateAttributes>
+          <CanCreateForms>1</CanCreateForms>
+          <CanCreateCharts>1</CanCreateCharts>
+          <CanCreateViews>1</CanCreateViews>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <EnforceStateTransitions>0</EnforceStateTransitions>
+          <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
+          <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
+          <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
+          <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
+          <IsMSTeamsIntegrationEnabled>0</IsMSTeamsIntegrationEnabled>
+          <IsSolutionAware>0</IsSolutionAware>
+        </entity>
+      </EntityInfo>
+      <FormXml>
+        <forms type="card">
+          <systemform>
+            <formid>{7e2fe42d-b8ef-4c21-844b-e345aa88b275}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab name="general" verticallayout="true" id="{a2166bef-1ac9-4269-bb9b-d89799d4deb3}" IsUserDefined="0">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="25%">
+                      <sections>
+                        <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{ac4fb195-dbf7-4141-993d-94ddb4b2f81f}">
+                          <labels>
+                            <label description="ColorStrip" languagecode="1033" />
+                          </labels>
+                        </section>
+                      </sections>
+                    </column>
+                    <column width="75%">
+                      <sections>
+                        <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{f60652f3-e5ee-4b09-85a4-969d1a2300c6}" IsUserDefined="0">
+                          <labels>
+                            <label description="Header" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{c36f47e4-e715-415f-9568-d08afc498e11}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Status Reason" languagecode="1033" />
+                                </labels>
+                                <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                              </cell>
+                              <cell id="{f7d3e7bc-25ef-4dea-a7b9-9b05c5071ea1}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                              <cell id="{fc904915-2561-4462-bdd6-487eb6c75468}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{fcf7f79a-f6a8-4a28-865d-184a2750c325}" IsUserDefined="0">
+                          <labels>
+                            <label description="Details" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{ba4af19c-1cac-4265-bd03-8c0b76ccbabf}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Building Name" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_buildingname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crb72_buildingname" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{257e554f-6193-448c-93f3-176a6a257fb0}" IsUserDefined="0">
+                          <labels>
+                            <label description="Footer" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{998627f2-fd2b-41dd-81a1-f5536c80a083}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                              </cell>
+                              <cell id="{127aaf5f-9331-4ae2-ba55-2cb4ac72e097}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Created On" languagecode="1033" />
+                                </labels>
+                                <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
+                              </cell>
+                              <cell id="{7fff26c2-d7bc-4367-8097-3edf1c1f090d}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                              <cell id="{5635d60d-e2ba-493a-9a86-8b539988d392}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Information" languagecode="1033" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="A card form for this entity." languagecode="1033" />
+            </Descriptions>
+          </systemform>
+        </forms>
+        <forms type="main">
+          <systemform>
+            <formid>{a893c8aa-1922-4b72-aff4-fa917997b00c}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab verticallayout="true" id="{c60c677e-62f6-4d01-8057-47a4974cbf18}" IsUserDefined="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{55baff2c-4fb7-42f7-9d61-2d5dabf242f0}">
+                          <labels>
+                            <label description="General" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{8dca2095-275f-4288-8c93-917332b4d31d}">
+                                <labels>
+                                  <label description="Building Name" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_buildingname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crb72_buildingname" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{a4266c77-ec0d-4ea1-8e78-a93357df7a29}">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{8b8750f2-8760-4ef1-be78-62039251c09a}">
+                                <labels>
+                                  <label description="Room Number" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_roomnumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crb72_roomnumber" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{3c7222b9-f5a5-41f0-be73-fefe4bce3f64}">
+                                <labels>
+                                  <label description="Capacity" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_capacity" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="crb72_capacity" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{d6e01b59-6122-4f15-8bf4-fbac0ba4cbde}">
+                                <labels>
+                                  <label description="Room Type" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_roomtype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="crb72_roomtype" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Information" languagecode="1033" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="A form for this entity." languagecode="1033" />
+            </Descriptions>
+          </systemform>
+        </forms>
+        <forms type="quick">
+          <systemform>
+            <formid>{2ad24bdc-3741-4d6b-bdf6-c4b77ae97ce8}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab verticallayout="true" id="{248a2914-2f97-4822-a2cb-3acf5207a2ab}" IsUserDefined="1">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{02a503a1-092a-48bf-8b15-26ecd5d81837}">
+                          <labels>
+                            <label description="GENERAL" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{697798f4-baa5-48d5-8c88-6f7452742e63}">
+                                <labels>
+                                  <label description="Building Name" languagecode="1033" />
+                                </labels>
+                                <control id="crb72_buildingname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crb72_buildingname" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{e7d2e313-2543-4c4b-aff4-eeac26c02cf3}">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Information" languagecode="1033" />
+            </LocalizedNames>
+          </systemform>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{61bbc58f-0ed8-4e25-9233-d00d54536c43}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_buildingname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_locationid">
+                  <cell name="crb72_buildingname" width="300" />
+                  <cell name="crb72_roomnumber" width="150" />
+                  <cell name="crb72_capacity" width="150" />
+                  <cell name="crb72_roomtype" width="150" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>0</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <attribute name="crb72_buildingname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_buildingname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <attribute name="crb72_roomnumber" />
+                  <attribute name="crb72_capacity" />
+                  <attribute name="crb72_roomtype" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Active Locations" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>0</isdefault>
+            <savedqueryid>{7aaf6853-c31b-4445-8d22-91ea79cd2300}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_buildingname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_locationid">
+                  <cell name="crb72_buildingname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>0</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <attribute name="crb72_buildingname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_buildingname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Inactive Locations" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{daf998d5-fe38-458b-b4c1-af025cc50507}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_buildingname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_locationid">
+                  <cell name="crb72_buildingname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>1</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <attribute name="crb72_buildingname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_buildingname" descending="false" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Location Advanced Find View" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{8de01cbe-3a21-423e-bfe0-459751112263}</savedqueryid>
+            <layoutxml>
+              <grid name="crb72_locations" jump="crb72_buildingname" select="1" icon="1" preview="1">
+                <row name="crb72_location" id="crb72_locationid">
+                  <cell name="crb72_buildingname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>2</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <attribute name="crb72_buildingname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_buildingname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Location Associated View" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{a3229981-fcd7-4ba3-89d9-618af44170af}</savedqueryid>
+            <layoutxml>
+              <grid name="crb72_locations" jump="crb72_buildingname" select="1" icon="1" preview="0">
+                <row name="crb72_location" id="crb72_locationid">
+                  <cell name="crb72_buildingname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>64</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <attribute name="crb72_buildingname" />
+                  <attribute name="createdon" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Location Lookup View" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{929343c9-6d6b-f011-bec3-6045bd409f66}</savedqueryid>
+            <querytype>8192</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical" output-format="xml-platform">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                    <condition attribute="ownerid" operator="eq-userid" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="My Locations" languagecode="1033" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="Active Locations owned by me" languagecode="1033" />
+            </Descriptions>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>1</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{fef3fe5a-8af6-49d5-9c51-96559c59708c}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="crb72_buildingname" select="1" icon="1" preview="1">
+                <row name="result" id="crb72_locationid">
+                  <cell name="crb72_buildingname" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>4</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="crb72_location">
+                  <attribute name="crb72_locationid" />
+                  <attribute name="crb72_buildingname" />
+                  <attribute name="createdon" />
+                  <order attribute="crb72_buildingname" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="crb72_buildingname" operator="like" value="{0}" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Quick Find Active Locations" languagecode="1033" />
+            </LocalizedNames>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{144aec46-416c-f011-b4cb-002248e3b764}" Name="Blank Booker When Assets Not In Use">
+      <JsonFileName>/Workflows/BlankBookerWhenAssetsNotInUse-144AEC46-416C-F011-B4CB-002248E3B764.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Blank Booker When Assets Not In Use" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityImageConfigs>
+    <EntityImageConfig>
+      <parententitylogicalname>crb72_asset</parententitylogicalname>
+      <primaryimageattribute>crb72_photo</primaryimageattribute>
+    </EntityImageConfig>
+  </EntityImageConfigs>
+  <AttributeImageConfigs>
+    <AttributeImageConfig>
+      <attributelogicalname>crb72_photo</attributelogicalname>
+      <parententitylogicalname>crb72_asset</parententitylogicalname>
+      <canstorefullimage>1</canstorefullimage>
+    </AttributeImageConfig>
+  </AttributeImageConfigs>
+  <EntityMaps />
+  <EntityRelationships>
+    <EntityRelationship Name="business_unit_crb72_asset">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>BusinessUnit</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>Restrict</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningBusinessUnit</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="business_unit_crb72_location">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Location</ReferencingEntityName>
+      <ReferencedEntityName>BusinessUnit</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>Restrict</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningBusinessUnit</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="crb72_Asset_to_Location">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>crb72_Location</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>crb72_Location</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>crb72_Location</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>crb72_Asset_to_Location</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
+    </EntityRelationship>
+    <EntityRelationship Name="lk_crb72_asset_createdby">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier of the user who created the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="lk_crb72_asset_modifiedby">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="lk_crb72_location_createdby">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Location</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier of the user who created the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="lk_crb72_location_modifiedby">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Location</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="owner_crb72_asset">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>Owner</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwnerId</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Owner Id" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="owner_crb72_location">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Location</ReferencingEntityName>
+      <ReferencedEntityName>Owner</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwnerId</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Owner Id" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="team_crb72_asset">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>Team</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningTeam</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="team_crb72_location">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Location</ReferencingEntityName>
+      <ReferencedEntityName>Team</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningTeam</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="TransactionCurrency_crb72_Asset">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>TransactionCurrency</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>Restrict</CascadeDelete>
+      <CascadeArchive>Restrict</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>TransactionCurrencyId</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier of the currency associated with the entity." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="user_crb72_asset">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Asset</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningUser</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="user_crb72_location">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>crb72_Location</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningUser</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+  </EntityRelationships>
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>crb72_qldedubookingportal_77e57</Name>
+      <AppVersion>2025-07-28T13:53:01Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.25072.6.0</CreatedByClientVersion>
+      <MinClientVersion>3.25072.6.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25072.6","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>rgba(132, 40, 38, 1)</BackgroundColor>
+      <DisplayName>QLD Edu Booking Portal</DisplayName>
+      <Description xsi:nil="true"></Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences>[]</AuthorizationReferences>
+      <ConnectionReferences>{}</ConnectionReferences>
+      <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Assets":{"entitySetName":"crb72_assets","logicalName":"crb72_asset"},"Locations":{"entitySetName":"crb72_locations","logicalName":"crb72_location"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[]</AppComponentDependencies>
+      <CanConsumeAppPass>1</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[{"logicalname":"crb72_asset","componenttype":1},{"logicalname":"crb72_location","componenttype":1},{"logicalname":"systemuser","componenttype":1}]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/crb72_qldedubookingportal_77e57_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/crb72_qldedubookingportal_77e57_DocumentUri.msapp</DocumentUri>
+      <AdditionalUris>
+        <AdditionalUri>/CanvasApps/crb72_qldedubookingportal_77e57_AdditionalUris0_identity.json</AdditionalUri>
+      </AdditionalUris>
+    </CanvasApp>
+  </CanvasApps>
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="new_sharedcommondataserviceforapps_a3cfc">
+      <connectionreferencedisplayname>Microsoft Dataverse</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
